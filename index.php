@@ -13,6 +13,14 @@
                 text-align: left;
                 border-bottom: 1px solid #ddd;
             }
+            .thumbnail{
+                height: 60px;
+                width: 100px;
+                overflow: hidden;
+            }
+            .thumbnail img{
+                width:100%;
+            }
         </style>
     </head>
     <body>
@@ -39,7 +47,7 @@
               echo "<td>".$values['ten']."</td>";
               echo "<td>".$values['ngaysinh']."</td>";
               echo "<td>".$values['diachi']."</td>";
-              echo "<td><image src = '".$values['anh']."' width = '60px' height = '60px'/></td>";
+              echo "<td><div class='thumbnail'><image src = '".$values['anh']."'/></div></td>";
               echo "</tr>";
           }
           ?>
